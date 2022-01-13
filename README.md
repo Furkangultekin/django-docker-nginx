@@ -7,6 +7,7 @@ It is a basic python django backend project running in a docker container in ord
 To make the project work; build and up docker container:
 ```
 $ docker-compose up -d --build
+$ docker-compose exec web python manage.py migrate --noinput
 ```
 
 Use POSTMAN to test it out at http://localhost:1333/
@@ -380,21 +381,4 @@ Try not existing item name
     "detail": "name not found"
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
